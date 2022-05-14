@@ -1,0 +1,26 @@
+<aura:component >
+    <aura:attribute name="wholeNumber" type="integer" access="public"/>
+    <aura:attribute name="percentage" type="integer" access="public"/>
+    <aura:attribute name="contactobj" type="Contact" access="private" required="false" /> 
+    
+    
+    <div>
+        <lightning:input type="number" name="input1" label="Enter a wholeNumber" value="{!v.wholeNumber}" />
+        <lightning:input type="number" name="input2" label="Enter a percentage" value="{!v.percentage}" formatter="percent-fixed" />
+   		
+        
+        <br/><br/>
+    {!v.wholeNumber}<br/><br/>
+    {!v.percentage}<br/><br/>
+    
+    {!mult(v.wholeNumber,v.percentage)}
+        <br/><br/>
+    
+    {!div(v.wholeNumber,v.percentage)}
+    
+    </div>
+       
+    <lightning:button value="component methods" label="component methods" onclick="{!c.doclick}" />
+    <lightning:input aura:id="testInput" label="Enter Age" />
+    
+</aura:component>

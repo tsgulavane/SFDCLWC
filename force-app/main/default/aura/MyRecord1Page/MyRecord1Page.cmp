@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <h1 class="red">I m in Lightning Component.</h1>
+    
+    <div>
+        <h3 class="lala">I m happy to learn aura component.</h3>
+        
+        <span>It feels very good.</span>
+    </div>
+    <span>It feels very good.</span>
+    <h2 style="background-color:red; color:white"> I m trying to search new thing</h2>
+</aura:component>
