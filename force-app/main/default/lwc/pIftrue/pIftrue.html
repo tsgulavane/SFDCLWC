@@ -1,0 +1,15 @@
+<template>
+
+    <lightning-card title="Card for If true false">
+        <lightning-button variant="brand" label={onclickchangeval} onclick={handleClick}>
+
+        </lightning-button>
+    </lightning-card>
+
+    <template if:true={visibleCard}>
+            <lightning-card title="IF/Else Card Showing">
+                {myTile}
+            </lightning-card>
+
+    </template>  
+</template>

@@ -1,0 +1,12 @@
+<template>
+
+    <lightning-card title="Parent Lwc">
+       <p class="slds-text-align_center">count = {countValue}</p>
+    </lightning-card>
+
+    <c-pchild-lwc onsubtract={handleSubstraction}
+                    onadd={handleAddition}>
+
+    </c-pchild-lwc>
+    
+</template>
